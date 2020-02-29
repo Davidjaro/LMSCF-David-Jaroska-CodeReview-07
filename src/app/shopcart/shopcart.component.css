@@ -17,21 +17,24 @@ th, td{
 	color: blue;
 	border: none;
 }
-@media (max-width: 770px){
+@media screen (max-width: 570px){
 	.shcart{
 		max-width: 100%;
 		margin: 0 !important;
 		padding: 0 !important;
 	}
 	img{
-		width: 100px;
-		height: 100px;
+		width: 50px;
+		height: 50px;
 	}
 	th,td{
-		line-height: 18px;
+		line-height: 22px;
 	}
 	.table td, .table th{
 		padding: 0.2rem !important;
+	}
+	td button{
+		margin: 0 !important;
 	}
 
 }

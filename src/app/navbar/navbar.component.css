@@ -12,3 +12,11 @@ img{
 nav{
 	background: rgba(255, 255, 255, 0.2);
 }
+.contact{
+	display: none;
+}
+@media (max-width: 987px){
+	nav .contact{
+		display: block;
+	}
+}

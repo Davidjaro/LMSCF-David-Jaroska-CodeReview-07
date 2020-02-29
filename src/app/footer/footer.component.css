@@ -3,3 +3,8 @@ nav{
 	height: 30px;
 	border: 1px gray solid;
 }
+@media (max-width: 987px){
+	nav{
+		display: none;
+	}
+}

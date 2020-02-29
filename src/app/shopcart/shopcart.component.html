@@ -1,5 +1,5 @@
 <div class="container shcart">
-	<table class="table table-hover table-dark table-responsive-sm">
+	<table class="table table-hover table-dark shcart">
 	  <thead>
 	    <tr>
 	      <th scope="col">#</th>
@@ -14,16 +14,16 @@
 	  <tbody>
 	  	<tr *ngFor="let product of items; index as i">
 	      <th scope="row"></th>
-	      <td><img class="" src="/assets/img/{{ product.img }}" alt="{{product.alt}}"></td>
+	      <td><img class="" src="assets/img/{{ product.img }}" alt="{{product.alt}}"></td>
 	      <td>{{ product.qtty }}<button (click)="addMore(product)" class="plus ml-2"> ➕ </button> <button (click)="addLess(product,i)" class="minus ml-2"> ➖ </button></td>
 	      <td>{{ product.name }}</td>
-	      <td>{{ product.price }} $</td>
+	      <td>{{ product.price }}$</td>
 	      <td><button class="btn btn-danger" (click)="removeItem(i)">Remove Product</button></td>
 	    </tr>
 	  </tbody>
     <thead >
       <tr class="text-center">
-        <th id="totalprice" colspan="6">Total: {{ calcTotal() }} $</th>
+        <th id="totalprice" colspan="6">Total: {{ calcTotal() }}</th>
       </tr>
     </thead>
 	</table>

@@ -39,13 +39,13 @@ clearCart(){
       // total += (item.qtty * item.price);
     }
     if (total > 200){
-      return ((total)*0.9);
+      return ((total)*0.9 )+ "$ (10% Discount added)";
     }
     else if (total > 500){
       return ((total)*0.8);
     }
     else{
-    return total;
+    return (total+ "$");
   }
 }
 

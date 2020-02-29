@@ -2,7 +2,7 @@
 <div id="carouselExampleIndicators" class="carousel slide mb-5" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item mb-5" [class.active]="productID == 0" *ngFor="let product of products; index as productID">
-          <img class="d-block w-100 poster" src="/assets/img/{{ product.img }}" alt="{{product.alt}}">
+          <img class="d-block w-100 poster" src="assets/img/{{ product.img }}" alt="{{product.alt}}">
         </div>
     </div>
     <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -17,8 +17,8 @@
 
 <div id="content" class="container-fluid">
   <div class="row m-4">
-    <div class="card col-lg-4 col-md-6 col-sm-12 text-center" style="width: 18rem;" *ngFor="let product of products ; index as productId">
-      <img class="card-img-top posterimg" src="/assets/img/{{ product.img }}" alt="Card Image">
+    <div class="card col-lg-3 col-md-5 col-sm-12 m-lg-5 m-md-4 mt-sm-2  text-center" style="width: 18rem;" *ngFor="let product of products ; index as productId">
+      <img class="card-img-top posterimg" src="assets/img/{{ product.img }}" alt="Card Image">
       <div class="card-body">
         <h5 class="card-title">{{ product.name }}</h5>
         <h4 class="card-title">Price per Person: {{ product.price }} $</h4>
