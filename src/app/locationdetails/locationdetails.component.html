@@ -1,0 +1,17 @@
+<div class="card col-12 text-center" style="width: 40rem;" *ngIf="product">
+	    <img class="card-img-top" src="/assets/img/{{ product.img }}" alt="Card Image">
+	    <div class="card-body">
+	        <h5 class="card-title">Location: {{ product.name }}</h5>
+	        <p class="card-text">Price: {{ product.price }} $</p>
+	        <blockquote class="blockquote mb-0">
+      		<p>{{product.desc}}</p>
+      		<footer class="blockquote-footer">{{product.descname}}</footer>
+    		</blockquote>
+    		<hr>
+    		<h5 class="card-title">Starting Date: {{ product.start }}</h5>
+    		<h5 class="card-title">Duration: {{ product.dur }} days</h5>
+	        <button class="btn btn-success ml-2" (click)="alertItemAdded(product)">Add to Cart</button>
+	        <button class="btn btn-warning ml-2" routerLink="/locations">Back</button>
+	        <button class="btn btn-primary ml-2" routerLink="/blog">Visit our Blog </button>
+	    </div>
+	</div>

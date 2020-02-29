@@ -1,0 +1,54 @@
+
+  <div class="jumbotron p-4 p-md-5 text-white rounded bg-dark">
+    <div class="col-md-6 px-0">
+      <h1 class="display-4 font-italic">Title of your blog post</h1>
+      <p class="lead my-3">Text to capture your audience</p>
+      <p class="lead mb-0"><a href="#" class="text-white font-weight-bold">Continue reading...</a></p>
+    </div>
+  </div>
+
+<div class="row mb-2">
+    <div class="col-md-6 col-lg-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static bg-white">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Tokyo</h3>
+          <div class="mb-1 text-muted">Feb 28</div>
+          <p class="card-text mb-auto">The cleanest capital city on Earth.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/assets/img/tokyo.jpg" class="bd-placeholder-img" width="200" height="250">
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 col-lg-6">
+      <div class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+        <div class="col p-4 d-flex flex-column position-static bg-white">
+          <strong class="d-inline-block mb-2 text-primary">World</strong>
+          <h3 class="mb-0">Featured post</h3>
+          <div class="mb-1 text-muted">Nov 12</div>
+          <p class="card-text mb-auto">Discover the beauty inside the heart of England.</p>
+        </div>
+        <div class="col-auto d-none d-lg-block">
+          <img src="/assets/img/london.jpg" class="bd-placeholder-img" width="200" height="250" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+        </div>
+      </div>
+    </div>
+</div>
+
+<div class="container">
+	<div id="blog{{product.id}}" class="blog-post m-2 p-4 text-dark bg-white blog-content" *ngFor="let product of products; index as productID">
+			<div class="col-auto d-lg-block">
+				<h2 class="blog-post-title">{{product.name}}</h2>
+	        	<p class="blog-post-meta">{{product.author}}</p>
+	          	<img src="/assets/img/{{product.img}}" class="bd-placeholder-img" width="200" height="250" preserveAspectRatio="xMidYMid slice" focusable="false" role="img" aria-label="Placeholder: Thumbnail">
+	        </div>
+	        
+
+	        <p>{{product.info}}</p>
+	        <hr>
+	        <h3>Highlights</h3>
+	        <h5><strong>{{product.highheading}}</strong></h5>
+	        <p>{{product.high}}</p>
+	</div>
+</div>

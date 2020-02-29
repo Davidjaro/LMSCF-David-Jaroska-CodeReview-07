@@ -1,0 +1,26 @@
+.content{
+	background: rgba(255, 255, 255, 0.1);
+	margin-top: 50px;
+	color: white;
+}
+h1{
+	font-weight: 400;
+	font-size: 9rem;
+}
+h3{
+	font-size: 6rem;
+}
+p{
+	font-size: 3rem;
+}
+@media (max-width: 770px){
+	h1{
+		font-size: 3rem;
+	}
+	h3{
+		font-size: 2rem;
+	}
+	p{
+		font-size: 1rem;
+	}
+}

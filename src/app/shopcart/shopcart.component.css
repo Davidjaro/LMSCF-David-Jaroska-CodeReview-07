@@ -1,0 +1,37 @@
+img{
+	height: 200px;
+	width: 200px;
+}
+th, td{
+	margin: 0;
+	line-height: 10px;
+	vertical-align: baseline !important;
+}
+.plus{
+	background: transparent;
+	color: blue;
+	border: none;
+}
+.minus{
+	background: transparent;
+	color: blue;
+	border: none;
+}
+@media (max-width: 770px){
+	.shcart{
+		max-width: 100%;
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	img{
+		width: 100px;
+		height: 100px;
+	}
+	th,td{
+		line-height: 18px;
+	}
+	.table td, .table th{
+		padding: 0.2rem !important;
+	}
+
+}

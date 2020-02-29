@@ -1,0 +1,11 @@
+.poster{
+	height: 500px;
+	object-fit: contain;
+}
+.content{
+	width: 80%;
+	margin: 0 auto;
+}
+.posterimg{
+	height: 300px;
+}
